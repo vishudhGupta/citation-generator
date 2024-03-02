@@ -1,0 +1,75 @@
+.main{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+/* Style for the form */
+.form-container {
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+  }
+  
+  /* Style for form inputs */
+  .input-container {
+    margin: 20px;
+  }
+  
+  .input-container input[type="text"],
+  .input-container input[type="email"],
+  .input-container input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .input-container input[type="text"]:focus,
+  .input-container input[type="email"]:focus,
+  .input-container input[type="date"]:focus {
+    outline: none;
+    border-color: #4f46e5; /* Change focus color as needed */
+  }
+  
+  /* Style for submit button */
+  .submit-btn {
+    display: block;
+    
+    padding: 12px;
+    background-color: #4f46e5;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+  }
+  
+  .submit-btn:hover {
+    background-color: #4338ca; /* Change hover color as needed */
+    border-color: #4338ca; /* Change border color on hover */
+  }
+  .buttons{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+  }
+  .result > p{
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f3f4f6;
+    border-radius: 8px;
+  }
+  .result{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
