@@ -29,7 +29,7 @@ function Citation() {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
-              'Authorization': 'Bearer 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',
+              'Authorization': 'Bearer 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',
             },
             body: JSON.stringify({
               prompt: `Your Name: ${formData.name}\nYour Address: ${formData.address}\nCity: ${formData.city}\nState: ${formData.state}\nZip Code: ${formData.zipCode}\nPhone Number: ${formData.phone}\nEmail Address: ${formData.email}\n\nDate: ${formData.date}\n\nThe Judicial Magistrate,\n${formData.courtName}\n${formData.courtCity}, ${formData.courtState}\n\nSubject: ${formData.citation}\n\nSir/Madam,\n\nI, ${formData.name}, residing at ${formData.address}, hereby submit this plaint before this Hon'ble Court for the initiation of legal proceedings against [Name of the Accused] under Section ${formData.citation} of the Indian Penal Code (IPC).\n`,
