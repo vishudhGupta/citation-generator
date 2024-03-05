@@ -1,3 +1,13 @@
+# Citation Generator - AI Powered Generator
+This citation Generator uses the power of AI by OpenAI API .
+I have integrated ChatGPT API to generate the result and then download the generated Result in form of pdf File at citation.js file just change API Key with Your API key and you are good to go.
+This project is developed as a Task provided by the Company for my job as a React Developer.
+
+# Feel Free to contribute in this project. 
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
