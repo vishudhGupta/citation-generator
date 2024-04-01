@@ -1,8 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './chat.css'
 import { jsPDF } from 'jspdf';
 
 function Citation() {
+
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    document.body.classList.toggle('dark-mode', darkMode);
+  }, [darkMode]);
+
+  const toggleDarkMode = () => setDarkMode(!darkMode);
+
+
   const [formData, setFormData] = useState({
     name: '',
     address: '',
@@ -125,6 +135,8 @@ function Citation() {
 
     <>
       {/* 
+
+      
    
     
       <input className='input-container'id='name' type="text" name="name" placeholder="Your Name.." onChange={handleChange} />
@@ -158,6 +170,10 @@ function Citation() {
 
 
       {/* new design */}
+
+      <button onClick={toggleDarkMode}>
+        {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      </button>
 
       <div className="container">
         <header>Citation Generator</header>
@@ -253,7 +269,7 @@ function Citation() {
           </div>
         </form>
       </div>
-
+                {/* add a text box                  */}
 
 
 
